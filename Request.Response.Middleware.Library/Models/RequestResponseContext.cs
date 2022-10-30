@@ -1,17 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-
-namespace Request.Response.Middleware.Library.Models
+﻿namespace Request.Response.Middleware.Library.Models
 {
     public class RequestResponseContext
     {
-        private readonly HttpContext _context;
+        internal readonly HttpContext _context;
 
         public RequestResponseContext(HttpContext context)
         {
