@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <LangVersion>10</LangVersion>
+	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageVersion>1.0.0</PackageVersion>
+	  <PackageId>Cengiz.Request.Response.Middleware.FileLogger</PackageId>
+	  <Authors>Oguzhan Cengiz</Authors>
+	  <Company>Oguzhan Cengiz</Company>
+	  <Description>This package was created to log Request and Response for WEB API projects.</Description>
+	  <PackageProjectUrl>https://github.com/oguzhanet</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/oguzhanet/Request.Response.Middleware</RepositoryUrl>
+	  <PackageTags>Request;Response;Middleware;Logging;FileLogger</PackageTags>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="License/LICENSE.txt" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="Cengiz.Request.Response.Middleware" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

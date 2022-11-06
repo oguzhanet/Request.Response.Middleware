@@ -10,6 +10,7 @@
         {
             _next = next;
             _logWriter = logWriter;
+            _recyclableMemoryStreamManager = new RecyclableMemoryStreamManager();
         }
 
         protected async Task<RequestResponseContext> BaseMiddlewareInvoke(HttpContext context)
@@ -27,9 +28,9 @@
 
             stopwatch.Stop();
 
-            context.Request.Body.Seek(0, SeekOrigin.Begin);
+            context.Response.Body.Seek(0, SeekOrigin.Begin);
             string responseBodyText = await new StreamReader(context.Response.Body).ReadToEndAsync();
-            context.Request.Body.Seek(0, SeekOrigin.Begin);
+            context.Response.Body.Seek(0, SeekOrigin.Begin);
 
             var result = new RequestResponseContext(context)
             {

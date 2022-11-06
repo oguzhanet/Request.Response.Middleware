@@ -1,4 +1,4 @@
-﻿namespace Request.Response.Middleware.Library.Models
+﻿namespace Request.Response.Middleware.Library
 {
     public class LoggingOptions
     {
