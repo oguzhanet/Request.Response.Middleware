@@ -1,15 +1,4 @@
-﻿using Request.Response.Middleware.FileLogger.Library.MessageCreators;
-using Request.Response.Middleware.FileLogger.Library.Models;
-using Request.Response.Middleware.Library;
-using Request.Response.Middleware.Library.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Request.Response.Middleware.FileLogger.Library.LogWriters
+﻿namespace Request.Response.Middleware.FileLogger.Library.LogWriters
 {
     internal class FileLogWriter : ILogWriter
     {

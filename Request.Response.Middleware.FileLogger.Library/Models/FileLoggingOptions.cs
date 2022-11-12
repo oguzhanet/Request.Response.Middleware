@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Request.Response.Middleware.FileLogger.Library.Models
+﻿namespace Request.Response.Middleware.FileLogger.Library.Models
 {
     public class FileLoggingOptions
     {

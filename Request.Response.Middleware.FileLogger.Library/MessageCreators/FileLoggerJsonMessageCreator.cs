@@ -1,9 +1,4 @@
-﻿using Request.Response.Middleware.Library;
-using Request.Response.Middleware.Library.Interfaces;
-using System;
-using System.Text.Json;
-
-namespace Request.Response.Middleware.FileLogger.Library.MessageCreators
+﻿namespace Request.Response.Middleware.FileLogger.Library.MessageCreators
 {
     internal class FileLoggerJsonMessageCreator : ILogMessageCreator
     {
